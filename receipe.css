@@ -1,0 +1,247 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F8F8F8;
+    color: #333333;
+}
+.view-recipe {
+    color: #FF6F61;
+    background-color: transparent;
+    border: none;
+    border-radius: 50px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+ .view-recipe:hover {
+    background-color: white;
+    color: #FF6F61;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("header.jpeg");
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header .logo img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.search-login {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    justify-content: flex-start;
+}
+
+.input-group {
+    flex: 1;
+}
+
+.search-bar input {
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.search-bar input::placeholder {
+    color: #999;
+}
+
+.search-bar button {
+    background-color: transparent;
+    border: none;
+    color: #333;
+    padding: 0;
+    margin-left: -35px;
+}
+
+.search-login a, .search-login button {
+    margin-left: 10px;
+    background-color :transparent;
+    color: #FF6F61;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #2c0505;
+    margin-top: 20px;
+    font-family: 'Brush Script MT', cursive;
+}
+
+.recipe-count {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 0.8rem;
+}
+
+.recipe-count p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    color: #333333;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    background-color: #292929;
+    color: #AAAAAA;
+}
+
+footer .social-media-icons img {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+footer .social-media-icons img:hover {
+    transform: scale(1.2);
+}
+
+footer p {
+    margin: 10px 0 0;
+}
+
+#theme-toggler {
+    color: #FF6F61;
+    background-color:transparent;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+    outline: none;
+}
+#theme-toggler:hover{
+    background-color: white;
+}
+
+
+/*  dark mode */
+body.dark-mode {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+
+body.dark-mode .search-bar input {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+body.dark-mode .search-bar input::placeholder {
+    color: #CCCCCC;
+}
+
+body.dark-mode .card {
+    background-color: black;
+    color: #FFFFFF;
+}
+body.dark-mode .card-title {
+    background-color: black;
+    color: #FFFFFF;
+}
+body.dark-mode .recipe-count p{
+    color:white;
+}
+body.dark-mode #recipe-count{
+    color:white;
+}
+body.dark-mode footer{
+    background-color: #222222;
+    color: #CCCCCC;
+}
+
+.search-login a:focus, .search-login button:focus {
+    outline: none;
+    border:none;
+}
+#theme-toggler:focus {
+    outline: none;
+    border:none;
+}
+
+@media (max-width: 524px) {
+    .header-content {
+        flex-direction: column;
+    }
+
+    .search-login {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .search-login .input-group {
+        width: 100%;
+        max-width: unset;
+        margin-bottom: 10px;
+    }
+
+    .search-login button {
+        margin-left: 0;
+    }
+
+    header .logo {
+        margin-top: 20px;
+        margin-left:10px;
+        width: 50px;
+        border-radius: 50%;
+    }
+}
+
